@@ -26,7 +26,7 @@ public abstract class MNativeImage {
     @Final
     @Shadow private long size;
 
-    @Shadow public abstract void close();
+    @Shadow(remap = false) public abstract void close();
 
 
     @Shadow @Final private NativeImage.Format format;

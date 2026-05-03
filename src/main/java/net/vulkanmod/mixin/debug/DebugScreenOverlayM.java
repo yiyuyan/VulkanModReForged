@@ -33,16 +33,6 @@ public abstract class DebugScreenOverlayM {
         return 0;
     }
 
-    @Shadow
-    @Final
-    private Font font;
-
-    @Shadow
-    protected abstract List<String> getGameInformation();
-
-    @Shadow
-    protected abstract List<String> getSystemInformation();
-
     @Redirect(method = "getSystemInformation", at = @At(value = "INVOKE", target = "Lcom/google/common/collect/Lists;newArrayList([Ljava/lang/Object;)Ljava/util/ArrayList;"))
     private ArrayList<String> redirectList(Object[] elements) {
         ArrayList<String> strings = new ArrayList<>();

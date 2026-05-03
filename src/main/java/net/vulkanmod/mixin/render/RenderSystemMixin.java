@@ -42,7 +42,7 @@ public abstract class RenderSystemMixin {
     @Shadow @Final private static float[] shaderColor;
     @Shadow @Final private static Vector3f[] shaderLightDirections;
 
-    @Shadow
+    @Shadow(remap = false)
     public static void assertOnGameThreadOrInit() {
     }
 
@@ -104,7 +104,7 @@ public abstract class RenderSystemMixin {
     /**
      * @author
      */
-    @Overwrite
+    @Overwrite(remap = false)
     public static void logicOp(GlStateManager.LogicOp op) {
         assertOnGameThread();
         VRenderSystem.logicOp(op);
