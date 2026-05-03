@@ -163,7 +163,7 @@ public abstract class RenderSystemMixin {
         VRenderSystem.clearDepth(d);
     }
 
-    @Redirect(method = "flipFrame", at = @At(value = "INVOKE", target = "Lorg/lwjgl/glfw/GLFW;glfwSwapBuffers(J)V"), remap = false)
+    @Redirect(remap = false,method = "flipFrame", at = @At(value = "INVOKE", target = "Lorg/lwjgl/glfw/GLFW;glfwSwapBuffers(J)V"))
     private static void removeSwapBuffers(long window) {
     }
 
