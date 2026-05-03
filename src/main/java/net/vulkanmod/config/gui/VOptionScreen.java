@@ -3,6 +3,7 @@ package net.vulkanmod.config.gui;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.Util;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.screens.Screen;
@@ -226,16 +227,16 @@ public class VOptionScreen extends Screen {
     }
 
     @Override
-    public void renderBackground(GuiGraphics guiGraphics, int i, int j, float f) {
+    public void renderBackground(GuiGraphics guiGraphics) {
+        if(this.minecraft==null) this.minecraft = Minecraft.getInstance();
         if (this.minecraft.level != null) {
-            this.renderTransparentBackground(guiGraphics);
+            this.renderDirtBackground(guiGraphics);
         } else {
             this.renderDirtBackground(guiGraphics);
             RenderSystem.enableBlend();
             GuiRenderer.fillGradient(0, 0, this.width, this.height,
                     ColorUtil.ARGB.pack(0.0f, 0.0f, 0.0f, 0.2f), ColorUtil.ARGB.pack(0.0f, 0.0f, 0.0f, 0.3f));
         }
-
     }
 
     @Override
@@ -243,7 +244,7 @@ public class VOptionScreen extends Screen {
         GuiRenderer.guiGraphics = guiGraphics;
         GuiRenderer.setPoseStack(guiGraphics.pose());
 
-        this.renderBackground(guiGraphics, 0, 0, delta);
+        this.renderBackground(guiGraphics);
 
         RenderSystem.enableBlend();
 

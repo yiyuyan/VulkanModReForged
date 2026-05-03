@@ -2,6 +2,10 @@ package net.vulkanmod.render.chunk;
 
 import it.unimi.dsi.fastutil.longs.Long2ByteOpenHashMap;
 import net.minecraft.world.level.ChunkPos;
+import net.vulkanmod.Initializer;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class ChunkStatusMap {
     public static final byte DATA_READY = 0b1;
@@ -26,7 +30,14 @@ public class ChunkStatusMap {
 
     public void updateDistance(int renderDistance) {
         int diameter = renderDistance * 2 + 1;
-        this.map.ensureCapacity(diameter * diameter);
+        try {
+            Method method = this.map.getClass().getDeclaredMethod("ensureCapacity", int.class);
+            method.setAccessible(true);
+            method.invoke(this.map,diameter * diameter);
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            Initializer.LOGGER.error("Failed to updateDistance.",e);
+        }
+        //this.map.ensureCapacity();
     }
 
     public void setChunkStatus(int x, int z, byte flag) {
