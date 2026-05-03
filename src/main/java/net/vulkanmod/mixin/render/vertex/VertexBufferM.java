@@ -22,12 +22,12 @@ public class VertexBufferM {
         vbo = new VBO();
     }
 
-    @Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/GlStateManager;_glGenBuffers()I"))
+    @Redirect(remap = false,method = "<init>", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/GlStateManager;_glGenBuffers()I"))
     private int doNothing() {
         return 0;
     }
 
-    @Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/GlStateManager;_glGenVertexArrays()I"))
+    @Redirect(remap = false,method = "<init>", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/GlStateManager;_glGenVertexArrays()I"))
     private int doNothing2() {
         return 0;
     }
@@ -71,7 +71,7 @@ public class VertexBufferM {
     /**
      * @author
      */
-    @Overwrite
+    @Overwrite(remap = false)
     public void close() {
         vbo.close();
     }

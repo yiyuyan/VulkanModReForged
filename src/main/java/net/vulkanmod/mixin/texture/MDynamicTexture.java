@@ -19,12 +19,12 @@ public abstract class MDynamicTexture extends AbstractTexture {
 
     @Shadow public abstract void upload();
 
-    @Redirect(method = "<init>(IIZ)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/TextureUtil;prepareImage(III)V"))
+    @Redirect(remap = false,method = "<init>(IIZ)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/TextureUtil;prepareImage(III)V"))
     private void redirect(int id, int width, int height) {
         createTexture();
     }
 
-    @Redirect(method = "<init>(Lcom/mojang/blaze3d/platform/NativeImage;)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/TextureUtil;prepareImage(III)V"))
+    @Redirect(remap = false,method = "<init>(Lcom/mojang/blaze3d/platform/NativeImage;)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/TextureUtil;prepareImage(III)V"))
     private void redirect2(int id, int width, int height) {
         createTexture();
     }
@@ -44,7 +44,7 @@ public abstract class MDynamicTexture extends AbstractTexture {
 //        createTexture();
 //    }
 
-    @Redirect(method = "<init>(Lcom/mojang/blaze3d/platform/NativeImage;)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;recordRenderCall(Lcom/mojang/blaze3d/pipeline/RenderCall;)V"))
+    @Redirect(remap = false,method = "<init>(Lcom/mojang/blaze3d/platform/NativeImage;)V", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;recordRenderCall(Lcom/mojang/blaze3d/pipeline/RenderCall;)V"))
     private void redirect2(RenderCall renderCall) {
 
         RenderSystem.recordRenderCall(() -> {

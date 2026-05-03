@@ -94,7 +94,7 @@ public class MinecraftMixin {
         SpriteUtil.setDoUpload(j == n);
     }
 
-    @Inject(method = "close", at = @At(value = "HEAD"))
+    @Inject(remap = false,method = "close", at = @At(value = "HEAD"))
     public void close(CallbackInfo ci) {
         Vulkan.waitIdle();
     }
