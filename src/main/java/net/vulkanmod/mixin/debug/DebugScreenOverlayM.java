@@ -1,7 +1,6 @@
 package net.vulkanmod.mixin.debug;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.components.DebugScreenOverlay;
 import net.vulkanmod.render.chunk.WorldRenderer;
 import net.vulkanmod.vulkan.SystemInfo;
@@ -17,7 +16,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import java.lang.management.ManagementFactory;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 import static net.vulkanmod.Initializer.getVersion;
 

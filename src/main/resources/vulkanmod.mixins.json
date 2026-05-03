@@ -3,13 +3,12 @@
   "minVersion": "0.8",
   "package": "net.vulkanmod.mixin",
   "compatibilityLevel": "JAVA_17",
-  "plugin": "net.vulkanmod.mixin.MixinPlugin",
   "mixins": [
   ],
   "client": [
+    "chunk.DirectionMixin",
     "chunk.ClientChunkCacheM",
     "chunk.ClientPacketListenerM",
-    "chunk.DirectionMixin",
     "chunk.FrustumMixin",
     "chunk.LevelRendererMixin",
     "chunk.RenderBuffersM",

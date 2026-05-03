@@ -29,7 +29,7 @@ public class MixinTransformationService implements ITransformationService {
     /**
      * Replace the original mixin launch plugin
      */
-    private static void replaceMixinLaunchPlugin() {
+    public static void replaceMixinLaunchPlugin() {
         try {
             // In production, mixin transmogrifier is loaded from the SERVICE layer and mixin requires access to its classes
             // in order to function properly, so we change the context classloader from BOOT to SERVICE accordingly.

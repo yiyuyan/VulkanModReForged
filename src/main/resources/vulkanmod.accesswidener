@@ -14,4 +14,4 @@ accessible field com/mojang/blaze3d/systems/RenderSystem vertexSorting Lcom/moja
 accessible field net/minecraft/client/renderer/RenderStateShard name Ljava/lang/String;
 
 #forged
-accessible method it/unimi/dsi/fastutil/longs/Long2ByteOpenHashMap ensureCapacity (I)V
+accessible method net/minecraft/client/model/geom/ModelPart compile (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V

@@ -30,7 +30,7 @@ public class ModelPartM {
      * @reason
      */
     @Overwrite
-    protected void compile(PoseStack.Pose pose, VertexConsumer vertexConsumer, int i, int j, float r, float g, float b, float a) {
+    public final void compile(PoseStack.Pose pose, VertexConsumer vertexConsumer, int i, int j, float r, float g, float b, float a) {
         Matrix4f matrix4f = pose.pose();
         Matrix3f matrix3f = pose.normal();
         ExtendedVertexBuilder vertexBuilder = (ExtendedVertexBuilder)vertexConsumer;

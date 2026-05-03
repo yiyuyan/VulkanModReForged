@@ -6,12 +6,13 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 
-@Mixin(Direction.class)
+@Mixin(value = Direction.class,remap = true)
 public class DirectionMixin {
 
     @Shadow @Final private static Direction[] BY_3D_DATA;
 
     @Shadow @Final private int oppositeIndex;
+
 
     /**
      * @author

@@ -100,7 +100,7 @@ public class MinecraftMixin {
     }
 
 
-    @Inject(method = "close", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/VirtualScreen;close()V"))
+    @Inject(remap = false,method = "close", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/VirtualScreen;close()V"))
     public void close2(CallbackInfo ci) {
         Vulkan.cleanUp();
         Util.shutdownExecutors();
