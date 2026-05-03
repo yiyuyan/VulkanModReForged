@@ -1,6 +1,7 @@
 plugins {
     id 'dev.architectury.loom' version '1.11-SNAPSHOT'
     id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = project.maven_group
@@ -8,6 +9,12 @@ version = project.mod_version
 
 base {
     archivesName = project.archives_name
+}
+
+configurations {
+    shadedImplementation { transitive = false }
+    fabricMixin { transitive = false }
+    implementation.extendsFrom(shadedImplementation, fabricMixin)
 }
 
 loom {
@@ -27,7 +34,16 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+    maven {
+        name = 'Sinytra'
+        url = 'https://maven.su5ed.dev/releases/'
+    }
     mavenLocal()
+
 }
 
 project.ext.lwjglVersion = "3.3.3"
@@ -41,6 +57,7 @@ dependencies {
     minecraft "net.minecraft:minecraft:$project.minecraft_version"
     mappings loom.officialMojangMappings()
     forge "net.minecraftforge:forge:$project.forge_version"
+    fabricMixin "org.sinytra:sponge-mixin:${mixin_version}"
 
     include(modImplementation("cn.ksmcbrigade:MixinRuntime:1.0"))
 
@@ -67,6 +84,46 @@ processResources {
 
     filesMatching('META-INF/mods.toml') {
         expand version: inputs.properties.version
+    }
+}
+
+
+shadowJar {
+    from("licenses") {
+        into "META-INF/"
+    }
+    from("LICENSE.txt") {
+        into "META-INF/"
+    }
+    // Exclude dependency licenses since we include them ourselves
+    exclude "**/LICENSE*"
+    exclude "**/NOTICE*"
+    exclude "META-INF/maven/**"
+    exclude "META-INF/versions/**"
+
+    archiveClassifier = "shadow"
+    configurations = [project.configurations.shadedImplementation]
+}
+
+tasks.register("fullJar", org.gradle.jvm.tasks.Jar) {
+    dependsOn(shadowJar)
+    manifest.from(jar.manifest)
+    from(zipTree(shadowJar.archiveFile))
+    from(provider { configurations.fabricMixin.singleFile }) {
+        rename { "fabric-mixin.jar" }
+    }
+    archiveClassifier = ""
+}
+
+assemble.dependsOn fullJar
+
+// Replace published jar artifact with shadowJar
+configurations {
+    [runtimeElements, apiElements].each {
+        it.outgoing {
+            artifacts.clear()
+            artifact(fullJar)
+        }
     }
 }
 

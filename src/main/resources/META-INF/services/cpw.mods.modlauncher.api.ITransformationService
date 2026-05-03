@@ -1,1 +1,2 @@
 cn.ksmcbrigade.vulkan_core.services.VulkanTransformationService
+cn.ksmcbrigade.vulkan_core.mixintransmog.MixinTransformationService
