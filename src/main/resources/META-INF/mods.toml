@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "vulkanmod"
+version = "${version}"
+displayName = "VulkanModReForged"
+authors = "commonplace(KSmc_brigade)"
+description = '''
+There's nothing. Fuck forge mod loader!
+'''
+#logoFile = ""
+
+[[dependencies.vulkanmod]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vulkanmod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"

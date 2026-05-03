@@ -1,0 +1,130 @@
+[12:11:36] [main/INFO] (cpw.mods.modlauncher.Launcher) ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.20.1-5, --assetsDir, D:\.gradle\caches\fabric-loom\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, -mixin.config, vulkanmod.mixins.json]
+[12:11:36] [main/INFO] (cpw.mods.modlauncher.Launcher) ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.2 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[12:11:36] [main/DEBUG] (cpw.mods.modlauncher.LaunchServiceHandler) Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[12:11:36] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Found naming services : [srgtoyarn]
+[12:11:36] [main/INFO] (unprotect) Initializing Unprotect using ModLauncher backend, target: Minecraft and loader classes (minecraft+forge)
+[12:11:36] [main/DEBUG] (cpw.mods.modlauncher.LaunchPluginHandler) Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,unprotect,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[12:11:36] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Discovering transformation services
+[12:11:36] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path GAMEDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run
+[12:11:36] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path MODSDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods
+[12:11:36] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path CONFIGDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\config
+[12:11:36] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path FMLCONFIG is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\config\fml.toml
+[12:11:36] [main/WARN] (net.minecraftforge.fml.loading.FMLConfig) Configuration file D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\config\fml.toml is not correct. Correcting
+[12:11:36] [main/INFO] (net.minecraftforge.fml.loading.FMLConfig) Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[12:11:36] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Found additional transformation services from discovery services: 
+[12:11:36] [main/INFO] (net.minecraftforge.fml.loading.ImmediateWindowHandler) Loading ImmediateWindowProvider fmlearlywindow
+[12:11:36] [main/INFO] (EARLYDISPLAY) Trying GL version 4.6
+[12:11:36] [main/INFO] (EARLYDISPLAY) If this message is the only thing at the bottom of your log before a crash, you probably have a driver issue.
+
+Possible solutions:
+A) Make sure Minecraft is set to prefer high performance graphics in the OS and/or driver control panel
+B) Check for driver updates on the graphics brand's website
+C) Try reinstalling your graphics drivers
+D) If still not working after trying all of the above, ask for further help on the Forge forums or Discord
+
+You can safely ignore this message if the game starts up successfully.
+[12:11:36] [main/INFO] (EARLYDISPLAY) Requested GL version 4.6 got version 4.6
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Found transformer services : [mixin,fml,ArchitecturyMixinRemapperInjector]
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services loading
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service mixin
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service mixin
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service fml
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.LauncherVersion) Found FMLLauncher version 1.0
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML 1.0 loading
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found EventBus version : 6.0.5+6.0.5+master.eb8e549b
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found Runtime Dist Cleaner
+[12:11:37] [main/DEBUG] (net.minecraftforge.coremod.CoreModEngine) CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found CoreMod version : 5.2.4
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found ForgeSPI package specification 5
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service fml
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service ArchitecturyMixinRemapperInjector
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service ArchitecturyMixinRemapperInjector
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Configuring option handling for services
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services initializing
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service mixin
+[12:11:37] [main/DEBUG] (mixin) MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@6279cee3
+[12:11:37] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/D:/.gradle/caches/modules-2/files-2.1/dev.architectury/mixin-patched/0.8.5.12/cf1f787f58d3b08b0cb53ecbba7928c09a1893c8/mixin-patched-0.8.5.12.jar%23130!/ Service=ModLauncher Env=CLIENT
+[12:11:37] [main/DEBUG] (mixin) Initialising Mixin Platform Manager
+[12:11:37] [main/DEBUG] (mixin) Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[12:11:37] [main/DEBUG] (mixin) Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[12:11:37] [main/DEBUG] (mixin) MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[12:11:37] [main/DEBUG] (mixin) Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[12:11:37] [main/DEBUG] (mixin) MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service mixin
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service fml
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Setting up basic FML game directories
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path GAMEDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path MODSDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path CONFIGDIR is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\config
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path FMLCONFIG is D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\config\fml.toml
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Loading configuration
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Preparing ModFile
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Preparing launch handler
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Using forgeclientuserdev as launch service
+[12:11:37] [main/DEBUG] (AXFORM) Set name handler Service NameHandler from mcp to srg
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Received command line version data  : VersionInfo[forgeVersion=47.4.10, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.RuntimeDistCleaner) Configuring for Dist CLIENT
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service fml
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service ArchitecturyMixinRemapperInjector
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service ArchitecturyMixinRemapperInjector
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Current naming domain is 'mcp'
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Identified name mapping providers {srg=srgtoyarn:1}
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services begin scanning
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Beginning scan trigger - transformation service mixin
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) End scan trigger - transformation service mixin
+[12:11:37] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Beginning scan trigger - transformation service fml
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Initiating mod scan
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Scanning for Mod Locators
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModListHandler) Found mod coordinates from lists: []
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found Dependency Locators : (JarInJar:null)
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Scanning for mods and other resources to load. We know 5 ways to find mods
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {mods folder locator at D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods}
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModsFolderLocator) Scanning mods dir D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods for mods
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {mods folder locator at D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods} found 0 candidates or errors
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {mods folder locator at D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\run\mods} found 0 valid mod files
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {Maven Directory locator for mods []}
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {Maven Directory locator for mods []} found 0 candidates or errors
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {Maven Directory locator for mods []} found 0 valid mod files
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {ExplodedDir locator}
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {ExplodedDir locator} found 0 candidates or errors
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {ExplodedDir locator} found 0 valid mod files
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.targets.CommonLaunchHandler) Got mod coordinates main%%D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\resources\main;main%%D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\classes\java\main;main%%D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\classes;main%%D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\resources from env
+[12:11:37] [main/DEBUG] (net.minecraftforge.fml.loading.targets.CommonLaunchHandler) Found supplied mod coordinates [{main=[D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\resources\main, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\classes\java\main, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\classes, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\resources]}]
+[12:11:37] [pool-2-thread-1/INFO] (EARLYDISPLAY) GL info: Intel(R) Iris(R) Xe Graphics GL version 4.6.0 - Build 31.0.101.4502, Intel
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file forge-1.20.1-47.4.10-minecraft-merged-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.10.jar with {minecraft} mods - versions {1.20.1}
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar
+[12:11:38] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar
+[12:11:38] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar
+[12:11:38] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar
+[12:11:38] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file D:\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\resources\main, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\classes\java\main, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\classes, D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\out\production\resources]
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\build\resources\main
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file main with {vulkanmod} mods - versions {1.0.0}
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: []
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file  with {forge} mods - versions {47.4.10}
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08 found 7 candidates or errors
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08 found 7 valid mod files
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file javafmllanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file lowcodelanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file mclanguage-1.20.1-47.4.10.jar of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file fmlcore-1.20.1-47.4.10.jar of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file forge-1.20.1-47.4.10-minecraft-merged-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.10.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file main of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file  of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@51671b08
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@537b32ef
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\.gradle\loom-cache\remapped_mods\remapped\cn\ksmcbrigade\MixinRuntime-0cd3bb3a\1.0\MixinRuntime-0cd3bb3a-1.0.jar]
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\.gradle\loom-cache\remapped_mods\remapped\cn\ksmcbrigade\MixinRuntime-0cd3bb3a\1.0\MixinRuntime-0cd3bb3a-1.0.jar
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file MixinRuntime-0cd3bb3a-1.0.jar with {mr} mods - versions {1.0}
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\.gradle\loom-cache\remapped_mods\remapped\cn\ksmcbrigade\MixinRuntime-0cd3bb3a\1.0\MixinRuntime-0cd3bb3a-1.0.jar]
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate D:\VulaknModReForged\vulkanmod-1.20.1-forge-only-template\.gradle\loom-cache\remapped_mods\remapped\cn\ksmcbrigade\MixinRuntime-0cd3bb3a\1.0\MixinRuntime-0cd3bb3a-1.0.jar
+[12:11:38] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file MixinRuntime-0cd3bb3a-1.0.jar with {mr} mods - versions {1.0}
